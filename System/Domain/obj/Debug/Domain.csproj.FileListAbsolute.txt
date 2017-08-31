@@ -2,3 +2,7 @@ c:\users\luis\documents\visual studio 2015\Projects\System\Domain\bin\Debug\Doma
 c:\users\luis\documents\visual studio 2015\Projects\System\Domain\bin\Debug\Domain.pdb
 c:\users\luis\documents\visual studio 2015\Projects\System\Domain\obj\Debug\Domain.dll
 c:\users\luis\documents\visual studio 2015\Projects\System\Domain\obj\Debug\Domain.pdb
+C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Domain\bin\Debug\Domain.dll
+C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Domain\bin\Debug\Domain.pdb
+C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Domain\obj\Debug\Domain.dll
+C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Domain\obj\Debug\Domain.pdb
