@@ -302,11 +302,6 @@
     <Content Include="Views\Pais\Details.cshtml" />
     <Content Include="Views\Pais\Edit.cshtml" />
     <Content Include="Views\Pais\Delete.cshtml" />
-    <Content Include="Views\Ubigeo\Index.cshtml" />
-    <Content Include="Views\Ubigeo\Create.cshtml" />
-    <Content Include="Views\Ubigeo\Details.cshtml" />
-    <Content Include="Views\Ubigeo\Delete.cshtml" />
-    <Content Include="Views\Ubigeo\Edit.cshtml" />
     <Content Include="Views\Apoderado\Index.cshtml" />
     <Content Include="Views\Apoderado\Details.cshtml" />
     <Content Include="Views\Apoderado\Create.cshtml" />

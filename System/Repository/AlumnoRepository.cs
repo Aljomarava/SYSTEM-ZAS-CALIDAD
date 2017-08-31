@@ -56,6 +56,24 @@ namespace Repository
 
             return query;
         }
+        //public IEnumerable<Alumno> GetAlumnos(string criterio)
+        //{
+        //    var query = from c in Context.alumnos.Include("Documento").Include("Ubigeo")
+        //                select c;
+
+        //    if (!string.IsNullOrEmpty(criterio))
+        //    {
+        //        query = from c in query.Include("Documento").Include("Ubigeo")
+        //                where c.Dni.ToString().ToUpper().Contains(criterio.ToUpper())
+        //                      || (c.Nombres + " " + c.Apellidos ).ToUpper().Contains(criterio.ToUpper()) || c.Apellidos.ToUpper().Contains(criterio.ToUpper())
+                            
+
+        //                select c;
+
+        //    }
+
+        //    return query;
+        //}
 
         public IEnumerable<Alumno> GetAlumnos(string criterio, int? idUbigeo)
         {

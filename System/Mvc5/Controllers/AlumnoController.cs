@@ -6,11 +6,13 @@ using System.Web.Mvc;
 using Domain;
 using Service;
 using System.Net;
+using Mvc5.Models;
 
 namespace Mvc5.Controllers
 {
     public class AlumnoController : Controller
     {
+        private ApplicationDbContext _context = new ApplicationDbContext();
         private IAlumnoService _alumnoService;
 
         private IUbigeoService _ubigeoService;
@@ -48,15 +50,85 @@ namespace Mvc5.Controllers
             }
             return View(al);
         }
-    
-     
-        // GET: Alumno/Create
-        public ActionResult Create(string codigo)
+
+        public JsonResult GetProvincias(int departmentId)
         {
-            ViewBag.codigo = _ubigeoService.GetUbigeoByCodigo(codigo);
+
+            string id = "";
+            if (departmentId.ToString().Count() < 6 && departmentId.ToString().Any()) id = (0 + "" + departmentId);
+            else id = departmentId.ToString();
+
+            _context.Configuration.ProxyCreationEnabled = false;
+            var provincias = _ubigeoService.GetUbigeos().Where(u => (u.Codigo.ToString().Remove(0, 4).ToString() == "00") &&
+                                                    (u.Codigo.ToString().Remove(2, 4).Equals(id.Remove(2, 4)))).
+                                                    OrderBy(u => u.Provincia);
+
+
+            var provincia = new List<Ubigeo>();
+
+            for (int i = 1; i < provincias.Count(); i++)
+            {
+                provincia.Add(provincias.ToList()[i]);
+            }
+            return Json(provincia);
+        }
+
+        public JsonResult GetDistritos(int provinciaId)
+        {
+
+            string id = "";
+            if (provinciaId.ToString().Count() < 6 && provinciaId.ToString().Count() > 0) id = (0 + "" + provinciaId);
+            else { id = provinciaId.ToString(); }
+
+            _context.Configuration.ProxyCreationEnabled = false;
+            var Distritos = _ubigeoService.GetUbigeos().Where(p => p.Codigo.ToString().Remove(0, 4) != "00" &&
+                                                           p.Codigo.ToString().Remove(4, 2).Equals(id.Remove(4, 2)));
+
+            var distrito = new List<Ubigeo>();
+
+            for (int i = 0; i < Distritos.Count(); i++)
+            {
+                distrito.Add(Distritos.ToList()[i]);
+            }
+            return Json(distrito);
+
+        }
+        public List<SelectListItem> Departamentos()
+        {
+            List<SelectListItem> DepartamentoId = new List<SelectListItem>();
+            var dato = _ubigeoService.GetUbigeos().Where(u => u.Codigo.Remove(0, 2).Equals("0000"));
+            foreach (var item in dato)
+            {
+                DepartamentoId.Add(
+                    new SelectListItem()
+                    {
+                        Text = item.Codigo,
+                        Value = item.Departamento
+                    });
+            }
+            return DepartamentoId;
+        }
+        public void Combo()
+        {
            
-            var ub = _ubigeoService.GetUbigeos();
-            ViewBag.departamento = new SelectList(ub,"Departamento", "Provincia", "Distrito");
+
+            var DepartamentoId = Departamentos();
+            ViewBag.departamento = new SelectList(DepartamentoId, "Text", "Value");
+
+            var ProvinciaId = new List<SelectListItem>() {
+                new SelectListItem() { Text = "Seleccione", Value = "Seleccione" }
+            };
+            ViewBag.provincia = new SelectList(ProvinciaId, "Text", "Value");
+
+            var DistritoId = new List<SelectListItem>() {
+                new SelectListItem() { Text = "Seleccione", Value = "Seleccione" }
+            };
+            ViewBag.distrito = new SelectList(DistritoId, "Text", "Value");
+        }
+        // GET: Alumno/Create
+        public ActionResult Create()
+        {
+           
             return View();
         }
 
@@ -66,6 +138,7 @@ namespace Mvc5.Controllers
         {
             try
             {
+                Combo();
                 // TODO: Add insert logic here
                 if (ModelState.IsValid)
                 {
