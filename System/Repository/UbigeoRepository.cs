@@ -44,7 +44,10 @@ namespace Repository
 
         public IEnumerable<Ubigeo> GetUbigeos()
         {
-            return Context.ubigeos;
+            var query = from u in Context.ubigeos
+                          select u;
+
+            return query;
         }
 
         public IEnumerable<Ubigeo> GetUbigeos(string criterio)

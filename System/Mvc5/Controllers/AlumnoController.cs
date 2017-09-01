@@ -57,7 +57,7 @@ namespace Mvc5.Controllers
         public ActionResult Create()
         {
             Combo();
-            return View();
+            return View("Create");
         }
 
         public List<SelectListItem> Departamentos()
@@ -108,7 +108,7 @@ namespace Mvc5.Controllers
 
                     return RedirectToAction("Index");
                 }
-                return View(alumno);
+                return View("Create",alumno);
             }
             catch
             {
