@@ -88,11 +88,6 @@
     <Compile Include="ISeccionRepository.cs" />
     <Compile Include="IUbigeoRepository.cs" />
     <Compile Include="MasterRepository.cs" />
-    <Compile Include="Migrations\201709010242103_generarBD.cs" />
-    <Compile Include="Migrations\201709010242103_generarBD.Designer.cs">
-      <DependentUpon>201709010242103_generarBD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NivelRepository.cs" />
     <Compile Include="ParentescoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,11 +104,13 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201709010242103_generarBD.resx">
-      <DependentUpon>201709010242103_generarBD.cs</DependentUpon>
-    </EmbeddedResource>
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
