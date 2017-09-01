@@ -18,18 +18,19 @@ namespace Domain
         [MaxLength(80)]
         public String Codigo { get; set; }
         
-                [Required]
-                [MaxLength(80)]
+        [Required]
+        [MaxLength(80)]
+        public String Departamento { get; set; }
 
-                public String Departamento { get; set; }
-                [Required]
-                [MaxLength(80)]
-                public String Provincia { get; set; }
-                [Required]
-                [MaxLength(80)]
-                public String Distrito { get; set; }
-        public int PaisId { get; set; }
-        public virtual Pais Pais { get; set; }
+        [Required]
+        [MaxLength(80)]
+        public String Provincia { get; set; }
+
+        [Required]
+        [MaxLength(80)]
+        public String Distrito { get; set; }
+  
+
 
         public List<Alumno> Alumnos { get; set; }
         public List<Apoderado> Apoderados { get; set; }

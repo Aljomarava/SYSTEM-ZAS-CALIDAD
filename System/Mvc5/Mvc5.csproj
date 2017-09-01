@@ -223,10 +223,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NivelController.cs" />
-    <Compile Include="Controllers\PaisController.cs" />
     <Compile Include="Controllers\ParentescoController.cs" />
     <Compile Include="Controllers\SeccionController.cs" />
-    <Compile Include="Controllers\UbigeoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -297,11 +295,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Pais\Index.cshtml" />
-    <Content Include="Views\Pais\Create.cshtml" />
-    <Content Include="Views\Pais\Details.cshtml" />
-    <Content Include="Views\Pais\Edit.cshtml" />
-    <Content Include="Views\Pais\Delete.cshtml" />
     <Content Include="Views\Apoderado\Index.cshtml" />
     <Content Include="Views\Apoderado\Details.cshtml" />
     <Content Include="Views\Apoderado\Create.cshtml" />

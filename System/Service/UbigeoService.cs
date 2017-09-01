@@ -54,9 +54,6 @@ namespace Service
             return _ubigeoRepository.GetUbigeos(criterio);
         }
 
-        public IEnumerable<Ubigeo> GetUbigeos(string criterio, int? idPais)
-        {
-            return _ubigeoRepository.GetUbigeos(criterio, idPais);
-        }
+       
     }
 }

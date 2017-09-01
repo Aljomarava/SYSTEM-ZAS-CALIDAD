@@ -56,7 +56,6 @@
     <Compile Include="MatriculaReegular.cs" />
     <Compile Include="Nivel.cs" />
     <Compile Include="Notas.cs" />
-    <Compile Include="Pais.cs" />
     <Compile Include="Parentesco.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seccion.cs" />

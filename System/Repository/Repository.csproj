@@ -84,50 +84,16 @@
     <Compile Include="IEspecialidadRepository.cs" />
     <Compile Include="IGradoRepository.cs" />
     <Compile Include="INivelRepository.cs" />
-    <Compile Include="IPaisRepository.cs" />
     <Compile Include="IParentescoRepository.cs" />
     <Compile Include="ISeccionRepository.cs" />
     <Compile Include="IUbigeoRepository.cs" />
     <Compile Include="MasterRepository.cs" />
-    <Compile Include="Migrations\201708101430260_pais-ubigeo.cs" />
-    <Compile Include="Migrations\201708101430260_pais-ubigeo.Designer.cs">
-      <DependentUpon>201708101430260_pais-ubigeo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201708111535139_apoderdo-ubigeo.cs" />
-    <Compile Include="Migrations\201708111535139_apoderdo-ubigeo.Designer.cs">
-      <DependentUpon>201708111535139_apoderdo-ubigeo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201708111612229_todo.cs" />
-    <Compile Include="Migrations\201708111612229_todo.Designer.cs">
-      <DependentUpon>201708111612229_todo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201708132110402_alumnosinapoderado.cs" />
-    <Compile Include="Migrations\201708132110402_alumnosinapoderado.Designer.cs">
-      <DependentUpon>201708132110402_alumnosinapoderado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201708132158562_fechanac.cs" />
-    <Compile Include="Migrations\201708132158562_fechanac.Designer.cs">
-      <DependentUpon>201708132158562_fechanac.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201708141656361_docuemntos-entrega-alumno.cs" />
-    <Compile Include="Migrations\201708141656361_docuemntos-entrega-alumno.Designer.cs">
-      <DependentUpon>201708141656361_docuemntos-entrega-alumno.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201708181854496_curso-grado-seccion.cs" />
-    <Compile Include="Migrations\201708181854496_curso-grado-seccion.Designer.cs">
-      <DependentUpon>201708181854496_curso-grado-seccion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201708241738185_alumnoedit.cs" />
-    <Compile Include="Migrations\201708241738185_alumnoedit.Designer.cs">
-      <DependentUpon>201708241738185_alumnoedit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201708311722477_inicial.cs" />
-    <Compile Include="Migrations\201708311722477_inicial.Designer.cs">
-      <DependentUpon>201708311722477_inicial.cs</DependentUpon>
+    <Compile Include="Migrations\201709010242103_generarBD.cs" />
+    <Compile Include="Migrations\201709010242103_generarBD.Designer.cs">
+      <DependentUpon>201709010242103_generarBD.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NivelRepository.cs" />
-    <Compile Include="PaisRepository.cs" />
     <Compile Include="ParentescoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeccionRepository.cs" />
@@ -145,32 +111,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201708101430260_pais-ubigeo.resx">
-      <DependentUpon>201708101430260_pais-ubigeo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708111535139_apoderdo-ubigeo.resx">
-      <DependentUpon>201708111535139_apoderdo-ubigeo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708111612229_todo.resx">
-      <DependentUpon>201708111612229_todo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708132110402_alumnosinapoderado.resx">
-      <DependentUpon>201708132110402_alumnosinapoderado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708132158562_fechanac.resx">
-      <DependentUpon>201708132158562_fechanac.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708141656361_docuemntos-entrega-alumno.resx">
-      <DependentUpon>201708141656361_docuemntos-entrega-alumno.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708181854496_curso-grado-seccion.resx">
-      <DependentUpon>201708181854496_curso-grado-seccion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708241738185_alumnoedit.resx">
-      <DependentUpon>201708241738185_alumnoedit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708311722477_inicial.resx">
-      <DependentUpon>201708311722477_inicial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201709010242103_generarBD.resx">
+      <DependentUpon>201709010242103_generarBD.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

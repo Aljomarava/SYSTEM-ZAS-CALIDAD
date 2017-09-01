@@ -51,15 +51,7 @@ C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\bin\Debug\Micros
 C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\bin\Debug\es\EntityFramework.resources.dll
 C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\bin\Debug\es\EntityFramework.SqlServer.resources.dll
 C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
-C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.paisubigeo.resources
-C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.apoderdoubigeo.resources
-C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.todo.resources
-C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.alumnosinapoderado.resources
-C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.fechanac.resources
-C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.docuemntosentregaalumno.resources
-C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.cursogradoseccion.resources
-C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.alumnoedit.resources
-C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.csproj.GenerateResource.Cache
 C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.dll
 C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.pdb
-C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.inicial.resources
+C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.generarBD.resources
+C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.csproj.GenerateResource.Cache

@@ -18,7 +18,7 @@ namespace Repository
         }
         public DbSet<Alumno> alumnos { get; set; }
         public DbSet<Apoderado> apoderados { get; set; }
-        public DbSet<Pais> paises { get; set; }
+  
         public DbSet<Ubigeo> ubigeos { get; set; }
         public DbSet<Notas> notas { get; set; }
         public DbSet<Curso> cursos { get; set; }

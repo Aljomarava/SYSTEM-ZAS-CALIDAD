@@ -73,12 +73,10 @@
     <Compile Include="IEspecialidadService.cs" />
     <Compile Include="IGradoService.cs" />
     <Compile Include="INivelService.cs" />
-    <Compile Include="IPaisService.cs" />
     <Compile Include="IParentescoService.cs" />
     <Compile Include="ISeccionService.cs" />
     <Compile Include="IUbigeoService.cs" />
     <Compile Include="NivelService.cs" />
-    <Compile Include="PaisService.cs" />
     <Compile Include="ParentescoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeccionService.cs" />

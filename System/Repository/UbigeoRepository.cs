@@ -62,25 +62,6 @@ namespace Repository
             return query;
         }
 
-        public IEnumerable<Ubigeo> GetUbigeos(string criterio, int? idPais)
-        {
-            var query = from p in Context.ubigeos
-                        select p;
-
-            if (!string.IsNullOrEmpty(criterio))
-            {
-                query = from p in query
-                        where p.Codigo.ToUpper().Contains(criterio.ToUpper()) 
-                             
-                        select p;
-            }
-
-            if (idPais.HasValue)
-            {
-                query = query.Where(p => p.PaisId.Equals(idPais.Value));
-            }
-
-            return query;
-        }
+      
     }
 }

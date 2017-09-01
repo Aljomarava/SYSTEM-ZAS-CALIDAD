@@ -51,48 +51,15 @@ namespace Mvc5.Controllers
             return View(al);
         }
 
-        public JsonResult GetProvincias(int departmentId)
+    
+        
+        // GET: Alumno/Create
+        public ActionResult Create()
         {
-
-            string id = "";
-            if (departmentId.ToString().Count() < 6 && departmentId.ToString().Any()) id = (0 + "" + departmentId);
-            else id = departmentId.ToString();
-
-            _context.Configuration.ProxyCreationEnabled = false;
-            var provincias = _ubigeoService.GetUbigeos().Where(u => (u.Codigo.ToString().Remove(0, 4).ToString() == "00") &&
-                                                    (u.Codigo.ToString().Remove(2, 4).Equals(id.Remove(2, 4)))).
-                                                    OrderBy(u => u.Provincia);
-
-
-            var provincia = new List<Ubigeo>();
-
-            for (int i = 1; i < provincias.Count(); i++)
-            {
-                provincia.Add(provincias.ToList()[i]);
-            }
-            return Json(provincia);
+            Combo();
+            return View();
         }
 
-        public JsonResult GetDistritos(int provinciaId)
-        {
-
-            string id = "";
-            if (provinciaId.ToString().Count() < 6 && provinciaId.ToString().Count() > 0) id = (0 + "" + provinciaId);
-            else { id = provinciaId.ToString(); }
-
-            _context.Configuration.ProxyCreationEnabled = false;
-            var Distritos = _ubigeoService.GetUbigeos().Where(p => p.Codigo.ToString().Remove(0, 4) != "00" &&
-                                                           p.Codigo.ToString().Remove(4, 2).Equals(id.Remove(4, 2)));
-
-            var distrito = new List<Ubigeo>();
-
-            for (int i = 0; i < Distritos.Count(); i++)
-            {
-                distrito.Add(Distritos.ToList()[i]);
-            }
-            return Json(distrito);
-
-        }
         public List<SelectListItem> Departamentos()
         {
             List<SelectListItem> DepartamentoId = new List<SelectListItem>();
@@ -108,9 +75,10 @@ namespace Mvc5.Controllers
             }
             return DepartamentoId;
         }
+
         public void Combo()
         {
-           
+          
 
             var DepartamentoId = Departamentos();
             ViewBag.departamento = new SelectList(DepartamentoId, "Text", "Value");
@@ -125,13 +93,6 @@ namespace Mvc5.Controllers
             };
             ViewBag.distrito = new SelectList(DistritoId, "Text", "Value");
         }
-        // GET: Alumno/Create
-        public ActionResult Create()
-        {
-           
-            return View();
-        }
-
         // POST: Alumno/Create
         [HttpPost]
         public ActionResult Create(Alumno alumno)
@@ -230,6 +191,46 @@ namespace Mvc5.Controllers
             {
                 return View();
             }
+        }
+        public JsonResult GetProvincias(int departmentId)
+        {
+
+            string id = "";
+            if (departmentId.ToString().Count() < 6 && departmentId.ToString().Any()) id = (0 + "" + departmentId);
+            else id = departmentId.ToString();
+
+            _context.Configuration.ProxyCreationEnabled = false;
+            var provincias = _ubigeoService.GetUbigeos().Where(u => (u.Codigo.ToString().Remove(0, 4).ToString() == "00") &&
+                                                             (u.Codigo.ToString().Remove(2, 4).Equals(id.Remove(2, 4)))).
+                OrderBy(u => u.Provincia);
+
+            var provincia = new List<Ubigeo>();
+
+            for (int i = 1; i < provincias.Count(); i++)
+            {
+                provincia.Add(provincias.ToList()[i]);
+            }
+            return Json(provincia);
+        }
+
+        public JsonResult GetDistritos(int provinciaId)
+        {
+
+            string id = "";
+            if (provinciaId.ToString().Count() < 6 && provinciaId.ToString().Count() > 0) id = (0 + "" + provinciaId);
+            else { id = provinciaId.ToString(); }
+
+            _context.Configuration.ProxyCreationEnabled = false;
+            var Distritos = _ubigeoService.GetUbigeos().Where(p => p.Codigo.ToString().Remove(0, 4) != "00" &&
+                                                            p.Codigo.ToString().Remove(4, 2).Equals(id.Remove(4, 2)));
+            var distrito = new List<Ubigeo>();
+
+            for (int i = 0; i < Distritos.Count(); i++)
+            {
+                distrito.Add(Distritos.ToList()[i]);
+            }
+            return Json(distrito);
+
         }
     }
 }

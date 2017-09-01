@@ -98,13 +98,14 @@ ViewBag.Title = "Create";
                     @Html.ValidationMessageFor(model => model.UbigeoId, "", new { @class = "text-danger" })
                 </div>
             </div>*@
-        @*<div class="row">
+      
+        <div class="row">
             <div class="col-xs-12 col-sm-4 col-lg-4">
                 @Html.Label("Departamento", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="form-group">
                     <div class="col-md-10">
                         @Html.DropDownList("DepartamentoId", (SelectList)ViewBag.departamento, "Seleccione...", new { @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.UbigeoId, "", new { @class = "text-danger" })
+                        @Html.ValidationMessageFor(model => model.Ubigeo.Codigo, "", new { @class = "text-danger" })
                     </div>
                 </div>
             </div>
@@ -113,7 +114,7 @@ ViewBag.Title = "Create";
                 <div class="form-group">
                     <div class="col-md-10">
                         @Html.DropDownList("ProvinciaId", (SelectList)ViewBag.provincia, null, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.UbigeoId, "", new { @class = "text-danger" })
+                        @Html.ValidationMessageFor(model => model.Ubigeo.Codigo, "", new { @class = "text-danger" })
                     </div>
                 </div>
             </div>
@@ -121,12 +122,15 @@ ViewBag.Title = "Create";
                 @Html.Label("Distrito", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="form-group">
                     <div class="col-md-10">
-                        @Html.DropDownListFor(model => model.UbigeoId, (SelectList)ViewBag.distrito, null, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.UbigeoId, "", new { @class = "text-danger" })
+                        @Html.DropDownListFor(model => model.Ubigeo.Codigo, (SelectList)ViewBag.distrito, null, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Ubigeo.Codigo, "", new { @class = "text-danger" })
                     </div>
                 </div>
             </div>
-        </div>*@
+        </div>
+
+
+
 
 
 
@@ -142,39 +146,8 @@ ViewBag.Title = "Create";
             </div>
 
 
-            @*@Html.Label("Codigo Ubigeo :")
-            @Html.TextBox("codigo", "", new { @class = "form-control" })
-            <button type="submit" class="btn btn-danger">Buscar</button>*@
 
-            @*<div class="row">
-                <div class="col-xs-12 col-sm-4 col-lg-4">
-                    @Html.Label("Departamento", htmlAttributes: new { @class = "control-label col-md-2" })
-                    <div class="form-group">
-                        <div class="col-md-10">
-                            @Html.DropDownList("DepartamentoId", (SelectList)ViewBag.departamento, "Seleccione...", new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.UbigeoId, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-lg-4">
-                    @Html.Label("Provincia", htmlAttributes: new { @class = "control-label col-md-2" })
-                    <div class="form-group">
-                        <div class="col-md-10">
-                            @Html.DropDownList("ProvinciaId", (SelectList)ViewBag.provincia, null, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.UbigeoId, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-lg-4">
-                    @Html.Label("Distrito", htmlAttributes: new { @class = "control-label col-md-2" })
-                    <div class="form-group">
-                        <div class="col-md-10">
-                            @Html.DropDownListFor(model => model.UbigeoId, (SelectList)ViewBag.distrito, null, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.UbigeoId, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                </div>
-            </div>*@
+         
        
 
         </div>

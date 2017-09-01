@@ -9,7 +9,7 @@ namespace Service
 {
    public interface IUbigeoService
     {
-        IEnumerable<Ubigeo> GetUbigeos(string criterio, Int32? idPais);
+     
         IEnumerable<Ubigeo> GetUbigeos(string criterio);
         IEnumerable<Ubigeo> GetUbigeos();
         Ubigeo GetUbigeoById(Int32? idUbigeo);
