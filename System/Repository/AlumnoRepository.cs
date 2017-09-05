@@ -32,6 +32,11 @@ namespace Repository
             }
         }
 
+        public Alumno GetAlumnoByCodigo(string codigo)
+        {
+            return Context.alumnos.SingleOrDefault(x=>x.Dni.Equals(codigo));
+        }
+
         public Alumno GetAlumnooById(int? idAlumnoo)
         {
             return Context.alumnos.Find(idAlumnoo);

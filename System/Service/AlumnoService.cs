@@ -32,6 +32,11 @@ namespace Service
             _alumnoRepository.EliminarAlumno(idAlumno);
         }
 
+        public Alumno GetAlumnoByCodigo(string codigo)
+        {
+            return _alumnoRepository.GetAlumnoByCodigo(codigo);
+        }
+
         public Alumno GetAlumnooById(int? idAlumnoo)
         {
             return _alumnoRepository.GetAlumnooById(idAlumnoo);

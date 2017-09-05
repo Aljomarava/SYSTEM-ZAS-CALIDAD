@@ -18,5 +18,8 @@ namespace Service
         void EditarAlumno(Alumno alumno);
 
         void EliminarAlumno(Int32 idAlumno);
+
+        Alumno GetAlumnoByCodigo(string codigo);
+
     }
 }

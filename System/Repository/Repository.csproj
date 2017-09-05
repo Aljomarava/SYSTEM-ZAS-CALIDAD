@@ -83,11 +83,22 @@
     <Compile Include="IEntregaDocumentosRepository.cs" />
     <Compile Include="IEspecialidadRepository.cs" />
     <Compile Include="IGradoRepository.cs" />
+    <Compile Include="IMatriculaRepository.cs" />
     <Compile Include="INivelRepository.cs" />
     <Compile Include="IParentescoRepository.cs" />
     <Compile Include="ISeccionRepository.cs" />
     <Compile Include="IUbigeoRepository.cs" />
     <Compile Include="MasterRepository.cs" />
+    <Compile Include="MatriculaRepository.cs" />
+    <Compile Include="Migrations\201709011259236_inicialbd.cs" />
+    <Compile Include="Migrations\201709011259236_inicialbd.Designer.cs">
+      <DependentUpon>201709011259236_inicialbd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709040534577_matricula.cs" />
+    <Compile Include="Migrations\201709040534577_matricula.Designer.cs">
+      <DependentUpon>201709040534577_matricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NivelRepository.cs" />
     <Compile Include="ParentescoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -111,6 +122,14 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201709011259236_inicialbd.resx">
+      <DependentUpon>201709011259236_inicialbd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709040534577_matricula.resx">
+      <DependentUpon>201709040534577_matricula.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
