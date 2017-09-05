@@ -12,7 +12,7 @@ namespace Service
      
         IEnumerable<Ubigeo> GetUbigeos(string criterio);
         IEnumerable<Ubigeo> GetUbigeos();
-        Ubigeo GetUbigeoById(Int32? idUbigeo);
+        Ubigeo GetUbigeo(Int32? idUbigeo);
 
         void AddUbigeo(Ubigeo ubigeo);
         void EditarUbigeo(Ubigeo ubigeo);

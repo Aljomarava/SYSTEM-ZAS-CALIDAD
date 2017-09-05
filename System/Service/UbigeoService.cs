@@ -39,9 +39,9 @@ namespace Service
             return _ubigeoRepository.GetUbigeoByCodigo(codigo);
         }
 
-        public Ubigeo GetUbigeoById(int? idUbigeo)
+        public Ubigeo GetUbigeo(int? idUbigeo)
         {
-            return _ubigeoRepository.GetUbigeoById(idUbigeo);
+            return _ubigeoRepository.GetUbigeo(idUbigeo);
         }
 
         public IEnumerable<Ubigeo> GetUbigeos()

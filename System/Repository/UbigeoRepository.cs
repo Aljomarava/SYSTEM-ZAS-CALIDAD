@@ -12,8 +12,7 @@ namespace Repository
     {
         public void AddUbigeo(Ubigeo ubigeo)
         {
-            Context.ubigeos.Add(ubigeo);
-            Context.SaveChanges();
+            throw new NotImplementedException();
         }
 
         public void EditarUbigeo(Ubigeo ubigeo)
@@ -24,47 +23,31 @@ namespace Repository
 
         public void EliminarUbigeo(int idUbigeo)
         {
-            var ub = Context.ubigeos.Find(idUbigeo);
-            if (ub != null)
-            {
-                Context.ubigeos.Remove(ub);
-                Context.SaveChanges();
-            }
+            throw new NotImplementedException();
         }
 
         public Ubigeo GetUbigeoByCodigo(string codigo)
         {
-            return Context.ubigeos.SingleOrDefault(x => x.Codigo.Equals(codigo));
+            throw new NotImplementedException();
         }
 
-        public Ubigeo GetUbigeoById(int? idUbigeo)
+        public Ubigeo GetUbigeo(int? idUbigeo)
         {
             return Context.ubigeos.Find(idUbigeo);
         }
 
         public IEnumerable<Ubigeo> GetUbigeos()
         {
+
             var query = from u in Context.ubigeos
-                          select u;
+                        select u;
 
             return query;
         }
 
         public IEnumerable<Ubigeo> GetUbigeos(string criterio)
         {
-            var query = from p in Context.ubigeos
-                        select p;
-            if (!string.IsNullOrEmpty(criterio))
-            {
-                query = from p in query
-                        where p.Codigo.ToUpper().Contains(criterio.ToUpper()) ||
-                              p.Departamento.ToUpper().Contains(criterio.ToUpper())
-                        select p;
-            }
-
-            return query;
+            throw new NotImplementedException();
         }
-
-      
     }
 }

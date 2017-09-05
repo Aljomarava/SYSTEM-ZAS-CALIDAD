@@ -52,11 +52,12 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Genero, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.Genero, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.Genero, "", new { @class = "text-danger" })
-                </div>
+                Masculino @Html.RadioButtonFor(model => model.Genero, "Masculino", new { htmlAttributes = new { @class = "form-control" } })
+
+                Femenino @Html.RadioButtonFor(model => model.Genero, " Femenino", new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Genero, "", new { @class = "text-danger" })
             </div>
+
         </div>
 
     
@@ -78,10 +79,10 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.UbigeoId, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.IdUbigeo, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.UbigeoId, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.UbigeoId, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.IdUbigeo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.IdUbigeo, "", new { @class = "text-danger" })
             </div>
         </div>
 

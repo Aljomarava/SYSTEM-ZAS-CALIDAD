@@ -77,23 +77,7 @@ namespace Repository
 
         public IEnumerable<Alumno> GetAlumnos(string criterio, int? idUbigeo)
         {
-            var query = from p in Context.alumnos
-                        select p;
-
-            if (!string.IsNullOrEmpty(criterio))
-            {
-                query = from p in query
-                        where p.Dni.ToUpper().Contains(criterio.ToUpper())
-
-                        select p;
-            }
-
-            if (idUbigeo.HasValue)
-            {
-                query = query.Where(p => p.UbigeoId.Equals(idUbigeo.Value));
-            }
-
-            return query;
+            throw new NotImplementedException();
         }
     }
 }

@@ -41,9 +41,9 @@ namespace Domain
         //public int ApoderadoId { get; set; }
         //public virtual Apoderado Apoderados { get; set; }
 
-        public int UbigeoId { get; set; }
+        public String IdUbigeo { get; set; }
         public virtual Ubigeo Ubigeo { get; set; }
-        public List<EntregaDocuentos> EntregarDocumentos { get; set; }
+        public virtual List<EntregaDocuentos> EntregarDocumentos { get; set; }
         public List<Notas> Notas { get; set; }
 
         public List<Matricula> Matriculas { get; set; }

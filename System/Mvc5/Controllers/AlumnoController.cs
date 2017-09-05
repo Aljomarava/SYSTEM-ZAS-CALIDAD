@@ -31,7 +31,8 @@ namespace Mvc5.Controllers
         public ActionResult Index(string criterio)
         {
             var al = _alumnoService.GetAlumnos(criterio);
-            var ub= _ubigeoService.GetUbigeos();
+         
+
             
             return View(al);
         }
@@ -63,13 +64,13 @@ namespace Mvc5.Controllers
         //public List<SelectListItem> Departamentos()
         //{
         //    List<SelectListItem> DepartamentoId = new List<SelectListItem>();
-        //    var dato = _ubigeoService.GetUbigeos().Where(u => u.Codigo.Remove(0, 2).Equals("0000"));
+        //    var dato = _ubigeoService.GetUbigeos().Where(u => u.IdUbigeo.Remove(0, 2).Equals("0000"));
         //    foreach (var item in dato)
         //    {
         //        DepartamentoId.Add(
         //            new SelectListItem()
         //            {
-        //                Text = item.Codigo,
+        //                Text = item.IdUbigeo,
         //                Value = item.Departamento
         //            });
         //    }
@@ -78,7 +79,7 @@ namespace Mvc5.Controllers
 
         //public void Combo()
         //{
-          
+
 
         //    var DepartamentoId = Departamentos();
         //    ViewBag.departamento = new SelectList(DepartamentoId, "Text", "Value");
@@ -200,9 +201,10 @@ namespace Mvc5.Controllers
         //    else id = departmentId.ToString();
 
         //    _context.Configuration.ProxyCreationEnabled = false;
-        //    var provincias = _ubigeoService.GetUbigeos().Where(u => (u.Codigo.ToString().Remove(0, 4).ToString() == "00") &&
-        //                                                     (u.Codigo.ToString().Remove(2, 4).Equals(id.Remove(2, 4)))).
-        //        OrderBy(u => u.Provincia);
+        //    var provincias = _ubigeoService.GetUbigeos().Where(u => (u.IdUbigeo.ToString().Remove(0, 4).ToString() == "00") &&
+        //                                            (u.IdUbigeo.ToString().Remove(2, 4).Equals(id.Remove(2, 4)))).
+        //                                            OrderBy(u => u.Provincia);
+
 
         //    var provincia = new List<Ubigeo>();
 
@@ -221,8 +223,9 @@ namespace Mvc5.Controllers
         //    else { id = provinciaId.ToString(); }
 
         //    _context.Configuration.ProxyCreationEnabled = false;
-        //    var Distritos = _ubigeoService.GetUbigeos().Where(p => p.Codigo.ToString().Remove(0, 4) != "00" &&
-        //                                                    p.Codigo.ToString().Remove(4, 2).Equals(id.Remove(4, 2)));
+        //    var Distritos = _ubigeoService.GetUbigeos().Where(p => p.IdUbigeo.ToString().Remove(0, 4) != "00" &&
+        //                                                   p.IdUbigeo.ToString().Remove(4, 2).Equals(id.Remove(4, 2)));
+
         //    var distrito = new List<Ubigeo>();
 
         //    for (int i = 0; i < Distritos.Count(); i++)
@@ -232,5 +235,6 @@ namespace Mvc5.Controllers
         //    return Json(distrito);
 
         //}
+
     }
 }

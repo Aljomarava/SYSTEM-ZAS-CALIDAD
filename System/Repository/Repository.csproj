@@ -88,9 +88,9 @@
     <Compile Include="ISeccionRepository.cs" />
     <Compile Include="IUbigeoRepository.cs" />
     <Compile Include="MasterRepository.cs" />
-    <Compile Include="Migrations\201709010242103_generarBD.cs" />
-    <Compile Include="Migrations\201709010242103_generarBD.Designer.cs">
-      <DependentUpon>201709010242103_generarBD.cs</DependentUpon>
+    <Compile Include="Migrations\201709042242094_inicial.cs" />
+    <Compile Include="Migrations\201709042242094_inicial.Designer.cs">
+      <DependentUpon>201709042242094_inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NivelRepository.cs" />
@@ -111,8 +111,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201709010242103_generarBD.resx">
-      <DependentUpon>201709010242103_generarBD.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201709042242094_inicial.resx">
+      <DependentUpon>201709042242094_inicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
