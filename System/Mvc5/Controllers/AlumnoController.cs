@@ -96,7 +96,7 @@ namespace Mvc5.Controllers
         //}
         // POST: Alumno/Create
         [HttpPost]
-        public ActionResult Create(Alumno alumno)
+        public ActionResult Create(Alumno alumno, string criterio)
         {
             try
             {
@@ -105,7 +105,7 @@ namespace Mvc5.Controllers
                 if (ModelState.IsValid)
                 {
                     _alumnoService.AddAlumno(alumno);
-
+                    _alumnoService.GetAlumnos(criterio);
 
                     return RedirectToAction("Index");
                 }

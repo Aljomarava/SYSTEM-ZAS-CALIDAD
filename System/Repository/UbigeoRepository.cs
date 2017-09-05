@@ -47,7 +47,17 @@ namespace Repository
 
         public IEnumerable<Ubigeo> GetUbigeos(string criterio)
         {
-            throw new NotImplementedException();
+            var query = from p in Context.ubigeos
+                        select p;
+            if (!string.IsNullOrEmpty(criterio))
+            {
+                query = from p in query
+                        where 
+                              p.IdUbigeo.ToUpper().Contains(criterio.ToUpper())
+                        select p;
+            }
+
+            return query;
         }
     }
 }
