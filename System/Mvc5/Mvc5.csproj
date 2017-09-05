@@ -225,6 +225,7 @@
     <Compile Include="Controllers\NivelController.cs" />
     <Compile Include="Controllers\ParentescoController.cs" />
     <Compile Include="Controllers\SeccionController.cs" />
+    <Compile Include="Controllers\UbigroController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -350,6 +351,7 @@
     <Content Include="Views\Grados\Edit.cshtml" />
     <Content Include="Views\Grados\Delete.cshtml" />
     <Content Include="Views\Curso\Index.cshtml" />
+    <Content Include="Views\Ubigro\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -52,8 +52,16 @@ namespace Mvc5.Controllers
             return View(al);
         }
 
-    
-        
+        public ActionResult Buscar(string criterio)
+        {
+            var ub= _ubigeoService.GetUbigeos(criterio);
+
+
+
+            return View(ub);
+
+        }
+
         // GET: Alumno/Create
         public ActionResult Create()
         {
@@ -96,9 +104,9 @@ namespace Mvc5.Controllers
         //}
         // POST: Alumno/Create
         [HttpPost]
-        public ActionResult Create(Alumno alumno, string criterio)
+        public ActionResult Create(Alumno alumno)
         {
-            var ub = _ubigeoService.GetUbigeos(criterio);
+            
             try
             {
                 //Combo();
@@ -113,7 +121,7 @@ namespace Mvc5.Controllers
             }
             catch
             {
-                return View(ub);
+                return View();
             }
         }
 

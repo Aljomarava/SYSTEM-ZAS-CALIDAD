@@ -82,40 +82,13 @@ ViewBag.Title = "Create";
             <div class="col-md-10">
                 @Html.EditorFor(model => model.IdUbigeo, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.IdUbigeo, "", new { @class = "text-danger" })
+              
+
             </div>
         </div>
 
     
 
-        @*<div class="row">
-            <div class="col-xs-12 col-sm-4 col-lg-4">
-                @Html.Label("Departamento", htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="form-group">
-                    <div class="col-md-10">
-                        @Html.DropDownList("DepartamentoId", (SelectList)ViewBag.departamento, "Seleccione...", new { @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.IdUbigeo, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-lg-4">
-                @Html.Label("Provincia", htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="form-group">
-                    <div class="col-md-10">
-                        @Html.DropDownList("ProvinciaId", (SelectList)ViewBag.provincia, null, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.IdUbigeo, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-lg-4">
-                @Html.Label("Distrito", htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="form-group">
-                    <div class="col-md-10">
-                        @Html.DropDownListFor(model => model.IdUbigeo, (SelectList)ViewBag.distrito, null, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.IdUbigeo, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-            </div>
-        </div>*@
 
 
 
@@ -135,57 +108,4 @@ ViewBag.Title = "Create";
         </div>
 }
 
-@*<script>
-    $(document).ready(function () {
-    
-
-
-        $("#DepartamentoId").change(function () {
-            $("#ProvinciaId").empty();
-            //$("#ProvinciaId").append('<option value="0">[Selecione Provincia]</option>');
-            $.ajax({
-                type: 'POST',
-                url: '@Url.Action("GetProvincias")',
-                dataType: 'json',
-                data: { departmentId: $("#DepartamentoId").val() },
-                success: function (data) {
-                    $.each(data, function (i, data) {
-                        $("#ProvinciaId").append('<option value="'
-                            + data.IdUbigeo + '">'
-                            + data.Provincia + '</option>');
-                    });
-                },
-                error: function (ex) {
-                    alert('Error al cargar las provincias.' + ex);
-                }
-            });
-            return false;
-        });
-
-        $("#ProvinciaId").change(function () {
-            $("#IdUbigeo").empty();
-            //$("#IdUbigeo").append('<option value="0">Selecione...</option>');
-            $("#IdUbigeo").removeAttr('disabled');
-            $.ajax({
-                type: 'POST',
-                url: '@Url.Action("GetDistritos")',
-                dataType: 'json',
-                data: { provinciaId: $("#ProvinciaId").val() },
-                success: function (data) {
-                    $.each(data, function (i, data) {
-                        $("#IdUbigeo").append('<option value="'
-                            + data.IdUbigeo + '">'
-                            + data.Distrito + '</option>');
-                    });
-                },
-                error: function (ex) {
-                    alert('Error al cargar las provincias.' + ex);
-                }
-            });
-            return false;
-        });
-    });
-
-
-</script>*@
 

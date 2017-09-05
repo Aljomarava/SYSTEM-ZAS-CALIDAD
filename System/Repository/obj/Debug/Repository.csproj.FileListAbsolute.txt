@@ -55,3 +55,4 @@ C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Reposi
 C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.pdb
 C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.inicial.resources
 C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.csproj.GenerateResource.Cache
+C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.codigo.resources

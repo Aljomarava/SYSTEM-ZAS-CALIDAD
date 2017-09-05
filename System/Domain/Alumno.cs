@@ -40,7 +40,7 @@ namespace Domain
 
         //public int ApoderadoId { get; set; }
         //public virtual Apoderado Apoderados { get; set; }
-
+        [Display(Name = "Codigo Ubigeo")]
         public String IdUbigeo { get; set; }
         public virtual Ubigeo Ubigeo { get; set; }
         public virtual List<EntregaDocuentos> EntregarDocumentos { get; set; }

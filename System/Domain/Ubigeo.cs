@@ -30,6 +30,7 @@ namespace Domain
 
         [Key]
         [StringLength(255)]
+       
         public String IdUbigeo { get; set; }
 
         public List<Alumno> Alumnos { get; set; }
