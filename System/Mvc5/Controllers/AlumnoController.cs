@@ -98,6 +98,7 @@ namespace Mvc5.Controllers
         [HttpPost]
         public ActionResult Create(Alumno alumno, string criterio)
         {
+            var ub = _ubigeoService.GetUbigeos(criterio);
             try
             {
                 //Combo();
@@ -105,7 +106,6 @@ namespace Mvc5.Controllers
                 if (ModelState.IsValid)
                 {
                     _alumnoService.AddAlumno(alumno);
-                    _alumnoService.GetAlumnos(criterio);
 
                     return RedirectToAction("Index");
                 }
@@ -113,7 +113,7 @@ namespace Mvc5.Controllers
             }
             catch
             {
-                return View();
+                return View(ub);
             }
         }
 
