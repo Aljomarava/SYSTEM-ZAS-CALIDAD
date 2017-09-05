@@ -5,17 +5,20 @@
 
 <h2>BuscarAlumno</h2>
 
-<div class = "form-horizontal">
-        <div class="form-group">
-        @Html.Label("Dni")
-        @Html.TextBox("dni", "", new {@class = "form-control"})
+<div class="form-horizontal">
+    <div class="form-group">
+        @Html.Label("Codigo")
+        @Html.TextBox("codigo", "", new { @class = "form-control" })
         <button id="btnBuscar" type="button" class="btn btn-primary">Buscar</button>
     </div>
-     <div class="form-group">
-            @Html.Label("Nombres")
-            @Html.TextBox("nombres", "", new { @class = "form-control" })
-     </div>
-
+    <div class="form-group">
+        @Html.Label("Descripción")
+        @Html.TextBox("descripcion", "", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.Label("Precio")
+        @Html.TextBox("precio", "", new { @class = "form-control" })
+    </div>
 </div>
 
 @section scripts{
@@ -23,7 +26,7 @@
         $(function () {
            $("#btnBuscar").on("click",function () {
 
-               var codigo = $("#codigo").val();
+               var codigo = $("#Dni").val();
 
                $.ajax({
                    method: "GET",
@@ -31,9 +34,8 @@
                }).done(function( result ) {
                    if (result.success === true) {
                        alert("El Producto existe..!!");
-                       $("#dni").val(result.data.alum);
-                       $("#nombres").val(result.data.Nombres);
-
+                       $("#descripcion").val(result.data.Nombres);
+                       $("#precio").val(result.data.Apellidos);
                    }
                    else
                    {

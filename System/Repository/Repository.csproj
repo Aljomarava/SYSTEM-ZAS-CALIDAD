@@ -98,6 +98,10 @@
     <Compile Include="Migrations\201709040534577_matricula.Designer.cs">
       <DependentUpon>201709040534577_matricula.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709051833376_matriculaa.cs" />
+    <Compile Include="Migrations\201709051833376_matriculaa.Designer.cs">
+      <DependentUpon>201709051833376_matriculaa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NivelRepository.cs" />
     <Compile Include="ParentescoRepository.cs" />
@@ -129,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709040534577_matricula.resx">
       <DependentUpon>201709040534577_matricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709051833376_matriculaa.resx">
+      <DependentUpon>201709051833376_matriculaa.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

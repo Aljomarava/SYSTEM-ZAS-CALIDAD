@@ -11,11 +11,7 @@ namespace Repository
 {
     public partial  class SystemContext:DbContext
     {
-        public SystemContext()
-        {
-            
-            this.Configuration.ProxyCreationEnabled = false;
-        }
+        
         public DbSet<Alumno> alumnos { get; set; }
         public DbSet<Apoderado> apoderados { get; set; }
   
