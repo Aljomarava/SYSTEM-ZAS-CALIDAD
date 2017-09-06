@@ -9,15 +9,21 @@ namespace Mvc5.Controllers
 {
     public class MatriculaController : Controller
     {
+
+
+
+        private IAlumnoService _alumnoService;
+        private IApoderadoService _apoderadoService;
+
+
+
         // GET: Matricula
         public ActionResult Index()
         {
             return View();
         }
 
-
-        private IAlumnoService _alumnoService;
-        private IApoderadoService _apoderadoService;
+     
 
         public MatriculaController()
         {
