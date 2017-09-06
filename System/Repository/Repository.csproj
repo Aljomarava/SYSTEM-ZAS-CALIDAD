@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="AlumnoRepository.cs" />
     <Compile Include="ApoderadoRepository.cs" />
+    <Compile Include="AsistenciaAlumnoRepository.cs" />
     <Compile Include="BimestreRepository.cs" />
     <Compile Include="CursoRepository.cs" />
     <Compile Include="DocenteRepository.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="GradoRepository.cs" />
     <Compile Include="IAlumnoRepository.cs" />
     <Compile Include="IApoderadoRepository.cs" />
+    <Compile Include="IAsistenciaAlumnoRepository.cs" />
     <Compile Include="IBimestreRepository.cs" />
     <Compile Include="ICursoRepository.cs" />
     <Compile Include="IDocenteRepository.cs" />
