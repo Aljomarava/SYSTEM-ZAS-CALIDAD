@@ -83,11 +83,13 @@
     <Compile Include="IEntregaDocumentosRepository.cs" />
     <Compile Include="IEspecialidadRepository.cs" />
     <Compile Include="IGradoRepository.cs" />
+    <Compile Include="IMatriculaRepository.cs" />
     <Compile Include="INivelRepository.cs" />
     <Compile Include="IParentescoRepository.cs" />
     <Compile Include="ISeccionRepository.cs" />
     <Compile Include="IUbigeoRepository.cs" />
     <Compile Include="MasterRepository.cs" />
+    <Compile Include="MatriculaRepository.cs" />
     <Compile Include="Migrations\201709042242094_inicial.cs" />
     <Compile Include="Migrations\201709042242094_inicial.Designer.cs">
       <DependentUpon>201709042242094_inicial.cs</DependentUpon>
