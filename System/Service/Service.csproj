@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="AlumnoService.cs" />
     <Compile Include="ApoderadosService.cs" />
+    <Compile Include="AsistenciaAlumnoService.cs" />
     <Compile Include="CursoService.cs" />
     <Compile Include="DocenteService.cs" />
     <Compile Include="DocumentoService.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="GradoService.cs" />
     <Compile Include="IAlumnoService.cs" />
     <Compile Include="IApoderadoService.cs" />
+    <Compile Include="IAsistenciaAlumnoService.cs" />
     <Compile Include="ICursoService.cs" />
     <Compile Include="IDocenteService.cs" />
     <Compile Include="IDocumentoService.cs" />

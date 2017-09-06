@@ -33,7 +33,20 @@ namespace Repository
 
         public IEnumerable<AsistenciaAlumno> GetAsistenciaAlumno(string criterio)
         {
-            throw new NotImplementedException();
+            var query = from a in _context.asistenciaAlumno.Include("Seccion.Grado").
+                    Include("Seccion.Grado.Nivel").Include("Alumno").Include("Curso")
+                        select a;
+
+            if (!string.IsNullOrEmpty(criterio))
+            {
+                var actual = DateTime.Now.Year.ToString();
+                query = from a in query.Include("Seccion").Include("Seccion.Grado").
+                        Include("Seccion.Grado.Nivel").Include("Alumno")
+                        where (a.Alumno.Nombres.ToUpper().Contains(criterio.ToUpper()) ||
+                        a.Alumno.Apellidos.ToUpper().Contains(criterio.ToUpper()))
+                        select a;
+            }
+            return query;
         }
 
         public void UpdateAsistencia(AsistenciaAlumno asistenciaAlumno)
