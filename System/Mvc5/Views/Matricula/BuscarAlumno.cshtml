@@ -17,3 +17,32 @@
     </div>
 
 </div>
+
+
+
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+           $("#btnBuscar").on("click",function () {
+
+               var codigo = $("#codigo").val();
+
+               $.ajax({
+                   method: "GET",
+                   url: "/Producto/BuscarProductoByCodigo?codigo="+codigo
+               }).done(function( result ) {
+                   if (result.success === true) {
+                       alert("El Producto existe..!!");
+                       $("#dni").val(result.data.alumno.dni);
+                       $("#nombres").val(result.data.Nombres);
+
+                   }
+                   else
+                   {
+                     alert("El Producto no existe..!!");
+                   }
+               });
+           });
+        });
+    </script>
+}
