@@ -31,6 +31,7 @@ namespace Repository
         public DbSet<Matricula> matriculas { get; set; }
         public DbSet<MatriculaReegular> matricularegular { get; set; }
         public DbSet<Parentesco> parentesco { get; set; }
+        public DbSet<AsistenciaAlumno> asistenciaAlumno { get; set; }
         /*
         public DbSet<Categoria> Categorias { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

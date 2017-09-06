@@ -98,6 +98,14 @@
     <Compile Include="Migrations\201709052244194_codigo.Designer.cs">
       <DependentUpon>201709052244194_codigo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709061658466_Asisten.cs" />
+    <Compile Include="Migrations\201709061658466_Asisten.Designer.cs">
+      <DependentUpon>201709061658466_Asisten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709061702357_AS.cs" />
+    <Compile Include="Migrations\201709061702357_AS.Designer.cs">
+      <DependentUpon>201709061702357_AS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NivelRepository.cs" />
     <Compile Include="ParentescoRepository.cs" />
@@ -122,6 +130,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709052244194_codigo.resx">
       <DependentUpon>201709052244194_codigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709061658466_Asisten.resx">
+      <DependentUpon>201709061658466_Asisten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709061702357_AS.resx">
+      <DependentUpon>201709061702357_AS.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

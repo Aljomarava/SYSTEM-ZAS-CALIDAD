@@ -108,3 +108,5 @@ C:\Users\Gianmarco\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\R
 C:\Users\Gianmarco\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.csproj.GenerateResource.Cache
 C:\Users\Gianmarco\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.dll
 C:\Users\Gianmarco\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.pdb
+C:\Users\Gianmarco\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.Asisten.resources
+C:\Users\Gianmarco\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.AS.resources
