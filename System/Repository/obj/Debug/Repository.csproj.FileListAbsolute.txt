@@ -82,3 +82,6 @@ C:\Users\bajos\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repos
 C:\Users\bajos\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.csproj.GenerateResource.Cache
 C:\Users\bajos\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.matricula.resources
 C:\Users\bajos\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.matriculaa.resources
+C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.inicialbd.resources
+C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.matricula.resources
+C:\Users\luis\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Repository\obj\Debug\Repository.Migrations.matriculaa.resources
