@@ -222,6 +222,7 @@
     <Compile Include="Controllers\GradosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MatriculaController.cs" />
     <Compile Include="Controllers\NivelController.cs" />
     <Compile Include="Controllers\ParentescoController.cs" />
     <Compile Include="Controllers\SeccionController.cs" />
@@ -352,6 +353,7 @@
     <Content Include="Views\Grados\Delete.cshtml" />
     <Content Include="Views\Curso\Index.cshtml" />
     <Content Include="Views\Ubigro\Index.cshtml" />
+    <Content Include="Views\Matricula\BuscarAlumno.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

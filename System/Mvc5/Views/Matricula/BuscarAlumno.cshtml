@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "BuscarAlumno";
+}
+
+<h2>BuscarAlumno</h2>
+
+<div class="form-horizontal">
+    <div class="form-group">
+        @Html.Label("Dni")
+        @Html.TextBox("dni", "", new { @class = "form-control" })
+        <button id="btnBuscar" type="button" class="btn btn-primary">Buscar</button>
+    </div>
+    <div class="form-group">
+        @Html.Label("Nombres")
+        @Html.TextBox("nombres", "", new { @class = "form-control" })
+    </div>
+
+</div>
