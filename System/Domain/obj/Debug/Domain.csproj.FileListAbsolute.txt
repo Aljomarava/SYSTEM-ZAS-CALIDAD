@@ -12,3 +12,8 @@ C:\Users\bajos\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Domain\bin\Debug\Domain.pd
 C:\Users\bajos\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 C:\Users\bajos\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Domain\obj\Debug\Domain.dll
 C:\Users\bajos\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Domain\obj\Debug\Domain.pdb
+C:\Users\Gianmarco\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Domain\bin\Debug\Domain.dll
+C:\Users\Gianmarco\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Domain\bin\Debug\Domain.pdb
+C:\Users\Gianmarco\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\Gianmarco\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Domain\obj\Debug\Domain.dll
+C:\Users\Gianmarco\Source\Repos\SYSTEM-ZAS-CALIDAD\System\Domain\obj\Debug\Domain.pdb

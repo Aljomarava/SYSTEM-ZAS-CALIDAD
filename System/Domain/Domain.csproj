@@ -44,6 +44,7 @@
     <Compile Include="Alumno.cs" />
     <Compile Include="AnioAcademico.cs" />
     <Compile Include="Apoderado.cs" />
+    <Compile Include="AsistenciaAlumno.cs" />
     <Compile Include="Bimestre.cs" />
     <Compile Include="Curso.cs" />
     <Compile Include="Docente.cs" />
