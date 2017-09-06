@@ -13,7 +13,7 @@ namespace Service
         IEnumerable<Alumno> GetAlumnos(string criterio);
         IEnumerable<Alumno> GetAlumnos();
         Alumno GetAlumnooById(Int32? idAlumnoo);
-
+        Alumno GetAlumnooByDni(string dni);
         void AddAlumno(Alumno alumno);
         void EditarAlumno(Alumno alumno);
 
